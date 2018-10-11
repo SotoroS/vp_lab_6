@@ -1,6 +1,6 @@
-﻿namespace vp_lab_6
+﻿namespace Potentiometer
 {
-    partial class Form1
+    partial class Potentiometer
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Код, автоматически созданный конструктором компонентов
 
         /// <summary>
         /// Требуемый метод для поддержки конструктора — не изменяйте 
@@ -28,13 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Potentiometer
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "Potentiometer";
+            this.Size = new System.Drawing.Size(300, 300);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Potentiometer_Paint);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Potentiometer_MouseMove);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
